@@ -58,6 +58,12 @@ tick(state, createTickContext());
 
 See [`examples/minimal-service-game.ts`](./examples/minimal-service-game.ts) for a slightly fuller example.
 
+Run the minimal example:
+
+```bash
+npm run example:minimal
+```
+
 ## What Is Included
 
 - Tick loop primitives and game clock helpers

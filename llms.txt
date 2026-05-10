@@ -23,6 +23,7 @@ Runtime dependencies: none for the core package
 - Build a new tycoon game: read `docs/AGENT_GUIDE.md`, select modules from `docs/module-catalog.json`, then compose a game-specific state and tick loop.
 - Add a reusable primitive: add code under `src/<module>/`, export it through `src/index.ts` and `package.json`, document it in the module README, and update `CHANGELOG.md`.
 - Validate changes: run `npm run build`, `npm run typecheck`, and `npm test`.
+- Smoke a runnable example: run `npm run example:minimal`.
 
 ## Useful Import Families
 

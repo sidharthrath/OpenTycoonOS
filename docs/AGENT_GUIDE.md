@@ -83,6 +83,12 @@ Before calling a generated game baseline usable, verify:
 - A 1-3 year headless sim run does not collapse immediately unless the game is intentionally difficult.
 - Public UI labels come from the game, not from OpenTycoonOS internals.
 
+For a known-good smoke path, run:
+
+```bash
+npm run example:minimal
+```
+
 ## 6. Search Hints For Agents
 
 When searching the repo:

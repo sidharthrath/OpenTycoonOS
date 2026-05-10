@@ -323,6 +323,7 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "test": "npm run typecheck",
+    "example:minimal": "npm run build && node examples/minimal-service-game.mjs",
     "prepare": "NODE_OPTIONS=--max-old-space-size=8192 tsup"
   },
   "files": [
