@@ -1,0 +1,42 @@
+# OpenTycoonOS
+
+OpenTycoonOS is a TypeScript package of composable simulation primitives for tycoon and management games.
+
+Package name: `opentycoonos`
+Repository: `https://github.com/sidharthrath/OpenTycoonOS`
+Primary language: TypeScript
+Runtime dependencies: none for the core package
+
+## Best Files For LLMs And Coding Agents
+
+- `README.md`: public overview, install, quick example.
+- `AGENTS.md`: coding-agent instructions.
+- `docs/AGENT_GUIDE.md`: game-building flow and module selection.
+- `docs/module-catalog.json`: machine-readable catalog of modules, import paths, and docs.
+- `ARCHITECTURE.md`: conceptual architecture.
+- `ROADMAP.md`: module maturity and intended direction.
+- `GAMES.md`: examples of game genres and module compositions.
+- `src/*/README.md`: module-level usage notes.
+
+## Common Tasks
+
+- Build a new tycoon game: read `docs/AGENT_GUIDE.md`, select modules from `docs/module-catalog.json`, then compose a game-specific state and tick loop.
+- Add a reusable primitive: add code under `src/<module>/`, export it through `src/index.ts` and `package.json`, document it in the module README, and update `CHANGELOG.md`.
+- Validate changes: run `npm run build`, `npm run typecheck`, and `npm test`.
+
+## Useful Import Families
+
+- `opentycoonos/tick`
+- `opentycoonos/clock`
+- `opentycoonos/financial`
+- `opentycoonos/accounting`
+- `opentycoonos/customer-funnel`
+- `opentycoonos/market-engine`
+- `opentycoonos/market-topology/segmented`
+- `opentycoonos/market-topology/geographic`
+- `opentycoonos/market-topology/network`
+- `opentycoonos/revenue-models/subscription`
+- `opentycoonos/revenue-models/transaction`
+- `opentycoonos/asset-models/fleet`
+- `opentycoonos/competition`
+- `opentycoonos/sim-harness`

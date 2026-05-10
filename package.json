@@ -1,0 +1,367 @@
+{
+  "name": "opentycoonos",
+  "version": "0.1.0-alpha.0",
+  "description": "Composable TypeScript primitives for building tycoon and management simulation games.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js",
+      "require": "./dist/types/index.cjs"
+    },
+    "./clock": {
+      "types": "./dist/clock/index.d.ts",
+      "import": "./dist/clock/index.js",
+      "require": "./dist/clock/index.cjs"
+    },
+    "./financial": {
+      "types": "./dist/financial/index.d.ts",
+      "import": "./dist/financial/index.js",
+      "require": "./dist/financial/index.cjs"
+    },
+    "./accounting": {
+      "types": "./dist/accounting/index.d.ts",
+      "import": "./dist/accounting/index.js",
+      "require": "./dist/accounting/index.cjs"
+    },
+    "./customer-funnel": {
+      "types": "./dist/customer-funnel/index.d.ts",
+      "import": "./dist/customer-funnel/index.js",
+      "require": "./dist/customer-funnel/index.cjs"
+    },
+    "./game-blueprints": {
+      "types": "./dist/game-blueprints/index.d.ts",
+      "import": "./dist/game-blueprints/index.js",
+      "require": "./dist/game-blueprints/index.cjs"
+    },
+    "./game-generator": {
+      "types": "./dist/game-generator/index.d.ts",
+      "import": "./dist/game-generator/index.js",
+      "require": "./dist/game-generator/index.cjs"
+    },
+    "./sim-harness": {
+      "types": "./dist/sim-harness/index.d.ts",
+      "import": "./dist/sim-harness/index.js",
+      "require": "./dist/sim-harness/index.cjs"
+    },
+    "./integration-recipes": {
+      "types": "./dist/integration-recipes/index.d.ts",
+      "import": "./dist/integration-recipes/index.js",
+      "require": "./dist/integration-recipes/index.cjs"
+    },
+    "./ui-blueprints": {
+      "types": "./dist/ui-blueprints/index.d.ts",
+      "import": "./dist/ui-blueprints/index.js",
+      "require": "./dist/ui-blueprints/index.cjs"
+    },
+    "./research-blueprint": {
+      "types": "./dist/research-blueprint/index.d.ts",
+      "import": "./dist/research-blueprint/index.js",
+      "require": "./dist/research-blueprint/index.cjs"
+    },
+    "./market": {
+      "types": "./dist/market/index.d.ts",
+      "import": "./dist/market/index.js",
+      "require": "./dist/market/index.cjs"
+    },
+    "./market-engine": {
+      "types": "./dist/market-engine/index.d.ts",
+      "import": "./dist/market-engine/index.js",
+      "require": "./dist/market-engine/index.cjs"
+    },
+    "./research": {
+      "types": "./dist/research/index.d.ts",
+      "import": "./dist/research/index.js",
+      "require": "./dist/research/index.cjs"
+    },
+    "./product": {
+      "types": "./dist/product/index.d.ts",
+      "import": "./dist/product/index.js",
+      "require": "./dist/product/index.cjs"
+    },
+    "./competitor": {
+      "types": "./dist/competitor/index.d.ts",
+      "import": "./dist/competitor/index.js",
+      "require": "./dist/competitor/index.cjs"
+    },
+    "./infrastructure": {
+      "types": "./dist/infrastructure/index.d.ts",
+      "import": "./dist/infrastructure/index.js",
+      "require": "./dist/infrastructure/index.cjs"
+    },
+    "./newspaper": {
+      "types": "./dist/newspaper/index.d.ts",
+      "import": "./dist/newspaper/index.js",
+      "require": "./dist/newspaper/index.cjs"
+    },
+    "./scoring": {
+      "types": "./dist/scoring/index.d.ts",
+      "import": "./dist/scoring/index.js",
+      "require": "./dist/scoring/index.cjs"
+    },
+    "./tick": {
+      "types": "./dist/tick/index.d.ts",
+      "import": "./dist/tick/index.js",
+      "require": "./dist/tick/index.cjs"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "import": "./dist/utils/index.js",
+      "require": "./dist/utils/index.cjs"
+    },
+    "./save-system": {
+      "types": "./dist/save-system/index.d.ts",
+      "import": "./dist/save-system/index.js",
+      "require": "./dist/save-system/index.cjs"
+    },
+    "./inflation": {
+      "types": "./dist/inflation/index.d.ts",
+      "import": "./dist/inflation/index.js",
+      "require": "./dist/inflation/index.cjs"
+    },
+    "./press": {
+      "types": "./dist/press/index.d.ts",
+      "import": "./dist/press/index.js",
+      "require": "./dist/press/index.cjs"
+    },
+    "./competition": {
+      "types": "./dist/competition/index.d.ts",
+      "import": "./dist/competition/index.js",
+      "require": "./dist/competition/index.cjs"
+    },
+    "./market-topology/segmented": {
+      "types": "./dist/market-topology/segmented/index.d.ts",
+      "import": "./dist/market-topology/segmented/index.js",
+      "require": "./dist/market-topology/segmented/index.cjs"
+    },
+    "./perks": {
+      "types": "./dist/perks/index.d.ts",
+      "import": "./dist/perks/index.js",
+      "require": "./dist/perks/index.cjs"
+    },
+    "./revenue-models/unit-sale": {
+      "types": "./dist/revenue-models/unit-sale/index.d.ts",
+      "import": "./dist/revenue-models/unit-sale/index.js",
+      "require": "./dist/revenue-models/unit-sale/index.cjs"
+    },
+    "./events": {
+      "types": "./dist/events/index.d.ts",
+      "import": "./dist/events/index.js",
+      "require": "./dist/events/index.cjs"
+    },
+    "./competition/competitor": {
+      "types": "./dist/competition/competitor/index.d.ts",
+      "import": "./dist/competition/competitor/index.js",
+      "require": "./dist/competition/competitor/index.cjs"
+    },
+    "./competition/recognition": {
+      "types": "./dist/competition/recognition/index.d.ts",
+      "import": "./dist/competition/recognition/index.js",
+      "require": "./dist/competition/recognition/index.cjs"
+    },
+    "./competition/auction": {
+      "types": "./dist/competition/auction/index.d.ts",
+      "import": "./dist/competition/auction/index.js",
+      "require": "./dist/competition/auction/index.cjs"
+    },
+    "./asset-models/inventory": {
+      "types": "./dist/asset-models/inventory/index.d.ts",
+      "import": "./dist/asset-models/inventory/index.js",
+      "require": "./dist/asset-models/inventory/index.cjs"
+    },
+    "./asset-models/rights": {
+      "types": "./dist/asset-models/rights/index.d.ts",
+      "import": "./dist/asset-models/rights/index.js",
+      "require": "./dist/asset-models/rights/index.cjs"
+    },
+    "./reputation": {
+      "types": "./dist/reputation/index.d.ts",
+      "import": "./dist/reputation/index.js",
+      "require": "./dist/reputation/index.cjs"
+    },
+    "./seasonality": {
+      "types": "./dist/seasonality/index.d.ts",
+      "import": "./dist/seasonality/index.js",
+      "require": "./dist/seasonality/index.cjs"
+    },
+    "./market-topology/geographic": {
+      "types": "./dist/market-topology/geographic/index.d.ts",
+      "import": "./dist/market-topology/geographic/index.js",
+      "require": "./dist/market-topology/geographic/index.cjs"
+    },
+    "./market-topology/product-competition": {
+      "types": "./dist/market-topology/product-competition/index.d.ts",
+      "import": "./dist/market-topology/product-competition/index.js",
+      "require": "./dist/market-topology/product-competition/index.cjs"
+    },
+    "./market-topology/use-case-matrix": {
+      "types": "./dist/market-topology/use-case-matrix/index.d.ts",
+      "import": "./dist/market-topology/use-case-matrix/index.js",
+      "require": "./dist/market-topology/use-case-matrix/index.cjs"
+    },
+    "./competition/acquisitions": {
+      "types": "./dist/competition/acquisitions/index.d.ts",
+      "import": "./dist/competition/acquisitions/index.js",
+      "require": "./dist/competition/acquisitions/index.cjs"
+    },
+    "./competition/licensing": {
+      "types": "./dist/competition/licensing/index.d.ts",
+      "import": "./dist/competition/licensing/index.js",
+      "require": "./dist/competition/licensing/index.cjs"
+    },
+    "./competition/capability-vectors": {
+      "types": "./dist/competition/capability-vectors/index.d.ts",
+      "import": "./dist/competition/capability-vectors/index.js",
+      "require": "./dist/competition/capability-vectors/index.cjs"
+    },
+    "./competition/company-sim": {
+      "types": "./dist/competition/company-sim/index.d.ts",
+      "import": "./dist/competition/company-sim/index.js",
+      "require": "./dist/competition/company-sim/index.cjs"
+    },
+    "./competition/rival-sim": {
+      "types": "./dist/competition/rival-sim/index.d.ts",
+      "import": "./dist/competition/rival-sim/index.js",
+      "require": "./dist/competition/rival-sim/index.cjs"
+    },
+    "./competition/rival-adapters": {
+      "types": "./dist/competition/rival-adapters/index.d.ts",
+      "import": "./dist/competition/rival-adapters/index.js",
+      "require": "./dist/competition/rival-adapters/index.cjs"
+    },
+    "./asset-models/multi-tier-production": {
+      "types": "./dist/asset-models/multi-tier-production/index.d.ts",
+      "import": "./dist/asset-models/multi-tier-production/index.js",
+      "require": "./dist/asset-models/multi-tier-production/index.cjs"
+    },
+    "./asset-models/fleet": {
+      "types": "./dist/asset-models/fleet/index.d.ts",
+      "import": "./dist/asset-models/fleet/index.js",
+      "require": "./dist/asset-models/fleet/index.cjs"
+    },
+    "./asset-models/infrastructure": {
+      "types": "./dist/asset-models/infrastructure/index.d.ts",
+      "import": "./dist/asset-models/infrastructure/index.js",
+      "require": "./dist/asset-models/infrastructure/index.cjs"
+    },
+    "./revenue-models/subscription": {
+      "types": "./dist/revenue-models/subscription/index.d.ts",
+      "import": "./dist/revenue-models/subscription/index.js",
+      "require": "./dist/revenue-models/subscription/index.cjs"
+    },
+    "./revenue-models/transaction": {
+      "types": "./dist/revenue-models/transaction/index.d.ts",
+      "import": "./dist/revenue-models/transaction/index.js",
+      "require": "./dist/revenue-models/transaction/index.cjs"
+    },
+    "./revenue-models/ads": {
+      "types": "./dist/revenue-models/ads/index.d.ts",
+      "import": "./dist/revenue-models/ads/index.js",
+      "require": "./dist/revenue-models/ads/index.cjs"
+    },
+    "./revenue-models/pricing": {
+      "types": "./dist/revenue-models/pricing/index.d.ts",
+      "import": "./dist/revenue-models/pricing/index.js",
+      "require": "./dist/revenue-models/pricing/index.cjs"
+    },
+    "./market-topology/network": {
+      "types": "./dist/market-topology/network/index.d.ts",
+      "import": "./dist/market-topology/network/index.js",
+      "require": "./dist/market-topology/network/index.cjs"
+    },
+    "./pipeline": {
+      "types": "./dist/pipeline/index.d.ts",
+      "import": "./dist/pipeline/index.js",
+      "require": "./dist/pipeline/index.cjs"
+    },
+    "./engagement": {
+      "types": "./dist/engagement/index.d.ts",
+      "import": "./dist/engagement/index.js",
+      "require": "./dist/engagement/index.cjs"
+    },
+    "./content-slate": {
+      "types": "./dist/content-slate/index.d.ts",
+      "import": "./dist/content-slate/index.js",
+      "require": "./dist/content-slate/index.cjs"
+    },
+    "./commodities": {
+      "types": "./dist/commodities/index.d.ts",
+      "import": "./dist/commodities/index.js",
+      "require": "./dist/commodities/index.cjs"
+    },
+    "./loyalty": {
+      "types": "./dist/loyalty/index.d.ts",
+      "import": "./dist/loyalty/index.js",
+      "require": "./dist/loyalty/index.cjs"
+    },
+    "./perishable": {
+      "types": "./dist/perishable/index.d.ts",
+      "import": "./dist/perishable/index.js",
+      "require": "./dist/perishable/index.cjs"
+    },
+    "./marketplace": {
+      "types": "./dist/marketplace/index.d.ts",
+      "import": "./dist/marketplace/index.js",
+      "require": "./dist/marketplace/index.cjs"
+    },
+    "./balance-sheet": {
+      "types": "./dist/balance-sheet/index.d.ts",
+      "import": "./dist/balance-sheet/index.js",
+      "require": "./dist/balance-sheet/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck",
+    "prepare": "NODE_OPTIONS=--max-old-space-size=8192 tsup"
+  },
+  "files": [
+    "dist",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "AGENTS.md",
+    "llms.txt",
+    "ARCHITECTURE.md",
+    "ROADMAP.md",
+    "GAMES.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "~5.9.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidharthrath/OpenTycoonOS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sidharthrath/OpenTycoonOS/issues"
+  },
+  "homepage": "https://github.com/sidharthrath/OpenTycoonOS#readme",
+  "keywords": [
+    "tycoon",
+    "simulation",
+    "management-game",
+    "game-engine",
+    "typescript",
+    "business-simulation",
+    "city-builder",
+    "game-dev"
+  ]
+}

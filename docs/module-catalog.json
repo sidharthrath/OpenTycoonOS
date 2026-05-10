@@ -1,0 +1,431 @@
+{
+  "name": "OpenTycoonOS module catalog",
+  "purpose": "Help humans and coding agents choose reusable tycoon-game simulation primitives.",
+  "package": "opentycoonos",
+  "modules": [
+    {
+      "module": "accounting",
+      "import": "opentycoonos/accounting",
+      "source": "src/accounting/index.ts",
+      "docs": "src/accounting/README.md",
+      "title": "Accounting — Statements, Financing, and Solvency",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.29"
+    },
+    {
+      "module": "asset-models",
+      "import": "opentycoonos/asset-models",
+      "source": "src/asset-models/index.ts",
+      "docs": "src/asset-models/README.md",
+      "title": "Asset Models",
+      "description": "Games pick **0 or 1** asset model (services often have none; physical-goods + capital-asset games pick one)."
+    },
+    {
+      "module": "asset-models/fleet",
+      "import": "opentycoonos/asset-models/fleet",
+      "source": "src/asset-models/fleet/index.ts",
+      "docs": "src/asset-models/fleet/README.md",
+      "title": "Fleet — Mobile Asset Capacity",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.27"
+    },
+    {
+      "module": "asset-models/infrastructure",
+      "import": "opentycoonos/asset-models/infrastructure",
+      "source": "src/asset-models/infrastructure/index.ts",
+      "docs": "src/asset-models/infrastructure/README.md",
+      "title": "Infrastructure — Fixed Capital Assets",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.27"
+    },
+    {
+      "module": "asset-models/inventory",
+      "import": "opentycoonos/asset-models/inventory",
+      "source": "src/asset-models/inventory/index.ts",
+      "docs": "src/asset-models/inventory/README.md",
+      "title": "asset-models/inventory — Factories + stock + obsolescence",
+      "description": "**Status:** IMPLEMENTED (v0.1, pulled from v0.2 roadmap)"
+    },
+    {
+      "module": "asset-models/multi-tier-production",
+      "import": "opentycoonos/asset-models/multi-tier-production",
+      "source": "src/asset-models/multi-tier-production/index.ts",
+      "docs": "src/asset-models/multi-tier-production/README.md",
+      "title": "asset-models/multi-tier-production — Owned + contracted + spot capacity allocator",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "asset-models/rights",
+      "import": "opentycoonos/asset-models/rights",
+      "source": "src/asset-models/rights/index.ts",
+      "docs": "src/asset-models/rights/README.md",
+      "title": "Rights / Asset-Ownership Income",
+      "description": "Use this module when a company owns an asset that other market actors keep using and paying for."
+    },
+    {
+      "module": "balance-sheet",
+      "import": "opentycoonos/balance-sheet",
+      "source": "src/balance-sheet/index.ts",
+      "docs": "src/balance-sheet/README.md",
+      "title": "Balance Sheet — Asset-Liability Management",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.27"
+    },
+    {
+      "module": "commodities",
+      "import": "opentycoonos/commodities",
+      "source": "src/commodities/index.ts",
+      "docs": "src/commodities/README.md",
+      "title": "Commodities — External price shocks + hedging",
+      "description": "**Status:** IMPLEMENTED (alpha.25)"
+    },
+    {
+      "module": "competition/acquisitions",
+      "import": "opentycoonos/competition/acquisitions",
+      "source": "src/competition/acquisitions/index.ts",
+      "docs": "src/competition/acquisitions/README.md",
+      "title": "acquisitions — Race-to-buy M&A targets",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "competition/auction",
+      "import": "opentycoonos/competition/auction",
+      "source": "src/competition/auction/index.ts",
+      "docs": "src/competition/auction/README.md",
+      "title": "competition/auction — Bidding wars framework",
+      "description": "**Status:** IMPLEMENTED (v0.1)"
+    },
+    {
+      "module": "competition/capability-vectors",
+      "import": "opentycoonos/competition/capability-vectors",
+      "source": "src/competition/capability-vectors/index.ts",
+      "docs": "src/competition/capability-vectors/README.md",
+      "title": "competition/capability-vectors — Independent + reactive competitor R&D progression",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "competition/company-sim",
+      "import": "opentycoonos/competition/company-sim",
+      "source": "src/competition/company-sim/index.ts",
+      "docs": "src/competition/company-sim/README.md",
+      "title": "competition/company-sim — Economically coherent rivals",
+      "description": "Use this when competitors should be simplified but not fake. Rivals can stay less detailed than the player, but they should still obey comparable economics: revenue, variable cost, fixed cost, capacity, demand, capex, cash, distress, restructures, and exit."
+    },
+    {
+      "module": "competition/competitor",
+      "import": "opentycoonos/competition/competitor",
+      "source": "src/competition/competitor/index.ts",
+      "docs": "src/competition/competitor/README.md",
+      "title": "competition/competitor — Generic rival AI framework",
+      "description": "**Status:** IMPLEMENTED (v0.1)"
+    },
+    {
+      "module": "competition/licensing",
+      "import": "opentycoonos/competition/licensing",
+      "source": "src/competition/licensing/index.ts",
+      "docs": "src/competition/licensing/README.md",
+      "title": "licensing — Time-bounded exclusivity at fixed cost",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "competition/recognition",
+      "import": "opentycoonos/competition/recognition",
+      "source": "src/competition/recognition/index.ts",
+      "docs": "src/competition/recognition/README.md",
+      "title": "competition/recognition — Awards + rankings framework",
+      "description": "**Status:** IMPLEMENTED (v0.1)"
+    },
+    {
+      "module": "competition/rival-adapters",
+      "import": "opentycoonos/competition/rival-adapters",
+      "source": "src/competition/rival-adapters/index.ts",
+      "docs": "src/competition/rival-adapters/README.md",
+      "title": "Rival Adapters — Standard Rival Integration",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.28"
+    },
+    {
+      "module": "competition/rival-sim",
+      "import": "opentycoonos/competition/rival-sim",
+      "source": "src/competition/rival-sim/index.ts",
+      "docs": "src/competition/rival-sim/README.md",
+      "title": "`competition/rival-sim`",
+      "description": "Believable competitor operating loop for clean-slate TycoonOS games."
+    },
+    {
+      "module": "content-slate",
+      "import": "opentycoonos/content-slate",
+      "source": "src/content-slate/index.ts",
+      "docs": "src/content-slate/README.md",
+      "title": "content-slate — Auto-commissioned content pipeline driven by player strategy",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "customer-funnel",
+      "import": "opentycoonos/customer-funnel",
+      "source": "src/customer-funnel/index.ts",
+      "docs": "src/customer-funnel/README.md",
+      "title": "customer-funnel — Pre-Market Awareness and Consideration",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.30"
+    },
+    {
+      "module": "engagement",
+      "import": "opentycoonos/engagement",
+      "source": "src/engagement/index.ts",
+      "docs": "src/engagement/README.md",
+      "title": "engagement — Engagement allocation, loyalty, and breadth multipliers",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "events",
+      "import": "opentycoonos/events",
+      "source": "src/events/index.ts",
+      "docs": "src/events/README.md",
+      "title": "Events — Random + scheduled game events",
+      "description": "**Status:** IMPLEMENTED (v0.1, promoted from v0.2 roadmap slot)"
+    },
+    {
+      "module": "game-blueprints",
+      "import": "opentycoonos/game-blueprints",
+      "source": "src/game-blueprints/index.ts",
+      "docs": "src/game-blueprints/README.md",
+      "title": "game-blueprints — Blueprint Primitives for Game Generation",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.31"
+    },
+    {
+      "module": "game-generator",
+      "import": "opentycoonos/game-generator",
+      "source": "src/game-generator/index.ts",
+      "docs": "src/game-generator/README.md",
+      "title": "game-generator — Blueprint-to-Skeleton Planning",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.32"
+    },
+    {
+      "module": "inflation",
+      "import": "opentycoonos/inflation",
+      "source": "src/inflation/index.ts",
+      "docs": "src/inflation/README.md",
+      "title": "inflation — Cost drift helpers",
+      "description": "**Status:** IMPLEMENTED (v0.1)"
+    },
+    {
+      "module": "integration-recipes",
+      "import": "opentycoonos/integration-recipes",
+      "source": "src/integration-recipes/index.ts",
+      "docs": "src/integration-recipes/README.md",
+      "title": "integration-recipes — Standard Module Handoffs",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.34"
+    },
+    {
+      "module": "loyalty",
+      "import": "opentycoonos/loyalty",
+      "source": "src/loyalty/index.ts",
+      "docs": "src/loyalty/README.md",
+      "title": "Loyalty — Multi-tier accumulated value",
+      "description": "**Status:** IMPLEMENTED (alpha.25)"
+    },
+    {
+      "module": "market-engine",
+      "import": "opentycoonos/market-engine",
+      "source": "src/market-engine/index.ts",
+      "docs": "src/market-engine/README.md",
+      "title": "`market-engine`",
+      "description": "Generic market clearing for TycoonOS games."
+    },
+    {
+      "module": "market-topology",
+      "import": "opentycoonos/market-topology",
+      "source": "src/market-topology/index.ts",
+      "docs": "src/market-topology/README.md",
+      "title": "Market Topology",
+      "description": "Every game picks **one** topology for how users relate to each other."
+    },
+    {
+      "module": "market-topology/geographic",
+      "import": "opentycoonos/market-topology/geographic",
+      "source": "src/market-topology/geographic/index.ts",
+      "docs": "src/market-topology/geographic/README.md",
+      "title": "market-topology/geographic — Regional rollout",
+      "description": "**Status:** IMPLEMENTED (v0.1, pulled from v0.2 roadmap)"
+    },
+    {
+      "module": "market-topology/network",
+      "import": "opentycoonos/market-topology/network",
+      "source": "src/market-topology/network/index.ts",
+      "docs": "src/market-topology/network/README.md",
+      "title": "market-topology/network — Shared capacity topology",
+      "description": "Use this when a game has capacity that must be routed or allocated before it becomes sellable: LEO broadband, telecom coverage, airline routes, metro lines, logistics corridors, cloud regions, utilities, and other infrastructure networks."
+    },
+    {
+      "module": "market-topology/product-competition",
+      "import": "opentycoonos/market-topology/product-competition",
+      "source": "src/market-topology/product-competition/index.ts",
+      "docs": "src/market-topology/product-competition/README.md",
+      "title": "market-topology/product-competition — Multi-product per-segment share allocation",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "market-topology/segmented",
+      "import": "opentycoonos/market-topology/segmented",
+      "source": "src/market-topology/segmented/index.ts",
+      "docs": "src/market-topology/segmented/README.md",
+      "title": "Segmented — Demographic/Psychographic Markets",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.28"
+    },
+    {
+      "module": "market-topology/use-case-matrix",
+      "import": "opentycoonos/market-topology/use-case-matrix",
+      "source": "src/market-topology/use-case-matrix/index.ts",
+      "docs": "src/market-topology/use-case-matrix/README.md",
+      "title": "use-case-matrix — Segments × use cases competition",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "marketplace",
+      "import": "opentycoonos/marketplace",
+      "source": "src/marketplace/index.ts",
+      "docs": "src/marketplace/README.md",
+      "title": "Marketplace — Two-sided Platform Dynamics",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.27"
+    },
+    {
+      "module": "perishable",
+      "import": "opentycoonos/perishable",
+      "source": "src/perishable/index.ts",
+      "docs": "src/perishable/README.md",
+      "title": "Perishable — Time-bound inventory + yield management",
+      "description": "**Status:** IMPLEMENTED (alpha.25)"
+    },
+    {
+      "module": "perks",
+      "import": "opentycoonos/perks",
+      "source": "src/perks/index.ts",
+      "docs": "src/perks/README.md",
+      "title": "Perks — Milestone unlocks",
+      "description": "**Status:** IMPLEMENTED (v0.1)"
+    },
+    {
+      "module": "pipeline",
+      "import": "opentycoonos/pipeline",
+      "source": "src/pipeline/index.ts",
+      "docs": "src/pipeline/README.md",
+      "title": "pipeline — Project-commissioning lifecycle (annual budget → slate → launch)",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "political",
+      "import": "opentycoonos/political",
+      "source": "src/political/index.ts",
+      "docs": "src/political/README.md",
+      "title": "Political — Regulation, subsidies, elections",
+      "description": "**Status:** PLANNED v0.4"
+    },
+    {
+      "module": "ranking",
+      "import": "opentycoonos/ranking",
+      "source": "src/ranking/index.ts",
+      "docs": "src/ranking/README.md",
+      "title": "Ranking — Ongoing prestige tiers",
+      "description": "**Status:** PLANNED v0.5"
+    },
+    {
+      "module": "reputation",
+      "import": "opentycoonos/reputation",
+      "source": "src/reputation/index.ts",
+      "docs": "src/reputation/README.md",
+      "title": "reputation — Brand health + incidents + boosts",
+      "description": "**Status:** IMPLEMENTED (v0.1, pulled from v0.2 roadmap)"
+    },
+    {
+      "module": "research-blueprint",
+      "import": "opentycoonos/research-blueprint",
+      "source": "src/research-blueprint/index.ts",
+      "docs": "src/research-blueprint/README.md",
+      "title": "research-blueprint — Research to Blueprint Workflow",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.36"
+    },
+    {
+      "module": "revenue-models",
+      "import": "opentycoonos/revenue-models",
+      "source": "src/revenue-models/index.ts",
+      "docs": "src/revenue-models/README.md",
+      "title": "Revenue Models",
+      "description": "Every game picks **one** revenue model (or composes multiple for hybrids like AV)."
+    },
+    {
+      "module": "revenue-models/ads",
+      "import": "opentycoonos/revenue-models/ads",
+      "source": "src/revenue-models/ads/index.ts",
+      "docs": "src/revenue-models/ads/README.md",
+      "title": "revenue-models/ads — Per-impression CPM revenue tracking",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "revenue-models/pricing",
+      "import": "opentycoonos/revenue-models/pricing",
+      "source": "src/revenue-models/pricing/index.ts",
+      "docs": "src/revenue-models/pricing/README.md",
+      "title": "revenue-models/pricing — Price response helpers",
+      "description": "Use this for games where price changes should affect demand and churn, but the game still owns the market model."
+    },
+    {
+      "module": "revenue-models/subscription",
+      "import": "opentycoonos/revenue-models/subscription",
+      "source": "src/revenue-models/subscription/index.ts",
+      "docs": "src/revenue-models/subscription/README.md",
+      "title": "revenue-models/subscription — Per-tier subscriber pools, churn, MRR",
+      "description": "**Status:** IMPLEMENTED (v0.2)"
+    },
+    {
+      "module": "revenue-models/transaction",
+      "import": "opentycoonos/revenue-models/transaction",
+      "source": "src/revenue-models/transaction/index.ts",
+      "docs": "src/revenue-models/transaction/README.md",
+      "title": "Transaction — Usage/Event Revenue",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.27"
+    },
+    {
+      "module": "revenue-models/unit-sale",
+      "import": "opentycoonos/revenue-models/unit-sale",
+      "source": "src/revenue-models/unit-sale/index.ts",
+      "docs": "src/revenue-models/unit-sale/README.md",
+      "title": "revenue-models/unit-sale — Discrete unit sales",
+      "description": "**Status:** IMPLEMENTED (v0.1, promoted from v0.2 roadmap slot to satisfy Shenzhen Phone Tycoon)"
+    },
+    {
+      "module": "roster",
+      "import": "opentycoonos/roster",
+      "source": "src/roster/index.ts",
+      "docs": "src/roster/README.md",
+      "title": "Roster — Individual talent/partner entities",
+      "description": "**Status:** PLANNED v0.5"
+    },
+    {
+      "module": "save-system",
+      "import": "opentycoonos/save-system",
+      "source": "src/save-system/index.ts",
+      "docs": "src/save-system/README.md",
+      "title": "Save System — Versioned Persistence",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.28"
+    },
+    {
+      "module": "seasonality",
+      "import": "opentycoonos/seasonality",
+      "source": "src/seasonality/index.ts",
+      "docs": "src/seasonality/README.md",
+      "title": "seasonality — Calendar-based multipliers",
+      "description": "**Status:** IMPLEMENTED (v0.1, pulled from v0.2 roadmap)"
+    },
+    {
+      "module": "sim-harness",
+      "import": "opentycoonos/sim-harness",
+      "source": "src/sim-harness/index.ts",
+      "docs": "src/sim-harness/README.md",
+      "title": "sim-harness — Headless Simulation Checks",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.33"
+    },
+    {
+      "module": "ui-blueprints",
+      "import": "opentycoonos/ui-blueprints",
+      "source": "src/ui-blueprints/index.ts",
+      "docs": "src/ui-blueprints/README.md",
+      "title": "ui-blueprints — UI Generation Primitives",
+      "description": "**Status:** IMPLEMENTED 0.1.0-alpha.35"
+    }
+  ]
+}
